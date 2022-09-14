@@ -1,0 +1,39 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.hero-section {
+  color: $white;
+
+  .container-fluid {
+    background-color: rgba($color: #000, $alpha: 0.5);
+    background-image: url(../assets/hero/hero2.jpg);
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-block: 6em;
+  }
+
+  .hero-content {
+    width: auto;
+    max-width: 500px;
+
+    h1 {
+      font-weight: $extra-bold;
+      font-size: $larg;
+      @include gradient-heading;
+      background-size: cover;
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    .attention {
+      font-weight: $bold;
+      font-size: $medium;
+    }
+
+    .bg-secondry {
+      background: $dark;
+    }
+  }
+}
