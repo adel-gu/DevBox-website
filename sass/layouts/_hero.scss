@@ -21,10 +21,6 @@
       font-weight: $extra-bold;
       font-size: $larg;
       @include gradient-heading;
-      background-size: cover;
-      background-clip: text;
-      -webkit-background-clip: text;
-      color: transparent;
     }
 
     .attention {
