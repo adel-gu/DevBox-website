@@ -1,0 +1,6 @@
+@use '../abstracts/colors' as *;
+
+.toolbar {
+  border: 1px solid $red;
+  padding-block: 0.5em;
+}
