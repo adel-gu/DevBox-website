@@ -1,6 +1,11 @@
-@use '../abstracts/colors' as *;
+@use '../abstracts/variables' as *;
 
 .toolbar {
-  border: 1px solid $red;
   padding-block: 0.5em;
+
+  a {
+    color: $white;
+    font-size: $small;
+    text-decoration: none;
+  }
 }
