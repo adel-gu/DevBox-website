@@ -1,0 +1,63 @@
+@use '../abstracts/variables' as *;
+
+.nav {
+  position: absolute;
+  z-index: 2;
+
+  .navbar-nav {
+    background-color: $white;
+    padding-top: 4em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    .nav-link {
+      color: $dark;
+      margin-bottom: 2em;
+    }
+
+    .campaing {
+      color: $primary;
+      font-weight: $extra-bold;
+      text-align: center;
+      width: 50%;
+    }
+  }
+
+  .primary-border {
+    border: 2px solid $primary;
+  }
+
+  .navbar-toggler-icon {
+    background-image: url(../assets/navbar/menu.svg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .nav {
+    background-color: $white;
+    position: static;
+
+    .navbar-nav {
+      background-color: $white;
+      padding-top: 0;
+      position: static;
+      width: auto;
+      height: auto;
+
+      .nav-link {
+        margin-bottom: 0;
+      }
+
+      .campaing {
+        width: auto;
+      }
+    }
+
+    .navbar-toggler-icon {
+      background-image: url(../assets/navbar/menu-gray.svg);
+    }
+  }
+}
