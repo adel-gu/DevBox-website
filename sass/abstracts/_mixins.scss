@@ -32,12 +32,10 @@
 }
 
 @mixin seperator($margin-left, $margin-right, $color) {
-  .separator {
-    border: 2px solid $color;
-    width: 50px;
-    margin-left: $margin-left;
-    margin-right: $margin-right;
-  }
+  border: 2px solid $color;
+  width: 50px;
+  margin-left: $margin-left;
+  margin-right: $margin-right;
 }
 
 @mixin card-small($color-or-none, $txt-clr) {
