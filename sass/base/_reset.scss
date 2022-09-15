@@ -1,5 +1,15 @@
-@use '../abstracts/colors' as *;
+@use '../abstracts/variables' as *;
 
 body {
-  background: $secondary;
+  color: $dark !important;
+  font-family: $ff-body;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
 }
