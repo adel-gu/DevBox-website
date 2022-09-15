@@ -1,2 +1,9 @@
 @use './base/reset';
+@use './base/typography';
 @use './components/toolbar';
+@use './components/navigation';
+@use './layouts/hero';
+@use './layouts/program';
+@use './layouts/speakers';
+@use './layouts/partners';
+@use './layouts/footer';
