@@ -6,6 +6,7 @@
 
   .container-fluid {
     @include overlay('../assets/hero/hero2.jpg', #000);
+
     padding-block: 6em;
   }
 
@@ -16,6 +17,7 @@
     h1 {
       font-weight: $extra-bold;
       font-size: $larg;
+
       @include gradient-heading;
     }
 

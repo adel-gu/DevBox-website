@@ -2,14 +2,16 @@
 @use '../abstracts/mixins' as *;
 
 #program {
-  @include overlay('../assets/program/halftone_background_12.jpg', $dark);
+  // @include overlay('../assets/program/halftone_background_12.jpg', $dark);
+  background: $dark;
   padding-block: 4em;
 
   h2 {
     @include sub-heading;
   }
+
   @include button-primary;
-  @include card-small(rgba($color: $dark, $alpha: 0.3), $white);
+  @include card-small(rgba($color: $secondary, $alpha: 0.3), $white);
 }
 
 @media screen and (min-width: 490px) {

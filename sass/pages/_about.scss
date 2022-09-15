@@ -37,12 +37,15 @@
 
     .past-conf-1 {
       padding: 150px 100px;
+
       @include overlay('../assets/about/people.jpg', $primary);
     }
 
     .past-conf-2 {
       padding: 150px 100px;
+
       @include overlay('../assets/about/group-people.jpg', $primary);
+
       background-position: center;
     }
   }

@@ -26,6 +26,53 @@ p {
   font-weight: 900;
 }
 
+.nav-item .nav-link {
+  position: relative;
+}
+.nav-item .nav-link::before {
+  content: "";
+  position: absolute;
+  bottom: 10%;
+  width: 0;
+  border-bottom: 3px solid #ff8c00;
+  transition: width 200ms ease-in-out;
+}
+.nav-item .nav-link:hover,
+.nav-item .nav-link:focus {
+  color: #ff8c00;
+}
+.nav-item .nav-link:hover::before {
+  width: 70%;
+}
+.nav-item .current {
+  color: #ff8c00 !important;
+}
+.nav-item .current::before {
+  width: 70%;
+}
+.nav-item:last-child .nav-link:hover::before {
+  border-bottom: none;
+  width: 0%;
+}
+.nav-item:last-child .nav-link:hover {
+  background: #ff8c00;
+  color: #fff;
+}
+
+.toolbar a:hover {
+  color: #d3d3d3 !important;
+}
+
+#program .btn:hover {
+  color: #ff8c00 !important;
+  background: none;
+}
+
+#speakers button:hover {
+  background: #ff8c00;
+  color: #fff;
+}
+
 .toolbar {
   padding-block: 0.5em;
 }
@@ -124,11 +171,7 @@ p {
 }
 
 #program {
-  background-color: rgba(39, 42, 49, 0.5);
-  background-image: url("../assets/program/halftone_background_12.jpg");
-  background-repeat: no-repeat;
-  background-blend-mode: overlay;
-  background-size: cover;
+  background: #272a31;
   padding-block: 4em;
 }
 #program h2 {
@@ -140,15 +183,10 @@ p {
   font-size: 1.5rem;
   font-weight: 900;
 }
-#program .separator {
-  border: 2px solid #ff8c00;
-  width: 50px;
-  margin-left: auto;
-  margin-right: auto;
-}
 #program .btn {
   background: #ff8c00;
   border: none;
+  border: 2px solid #ff8c00;
   border-radius: 0;
   padding-block: 1em;
   font-weight: 900;
@@ -158,7 +196,7 @@ p {
   --bs-gutter-x: 0;
 }
 #program .cards .card {
-  background: rgba(39, 42, 49, 0.3);
+  background: rgba(211, 211, 211, 0.3);
   border: none;
   border-radius: 0;
   margin-bottom: 1em;
@@ -283,12 +321,6 @@ p {
   border: 2px solid #ff8c00;
   color: #ff8c00;
 }
-#speakers .separator {
-  border: 2px solid #ff8c00;
-  width: 50px;
-  margin-left: auto;
-  margin-right: auto;
-}
 #speakers .cards {
   margin-bottom: 2em;
   --bs-gutter-x: 0;
@@ -356,15 +388,6 @@ p {
   font-style: italic;
   color: #ff8c00;
 }
-#speakers .cards .card .card-body .separator {
-  border: 2px solid #272a31;
-  width: 50px;
-  margin-left: 0;
-  margin-right: auto;
-}
-#speakers .cards .card .card-body .separator-gray {
-  margin-block: 0.8em;
-}
 
 @media screen and (min-width: 768px) {
   #speakers .cards {
@@ -428,16 +451,78 @@ p {
 #partners h2 {
   color: #d3d3d3;
 }
-#partners .separator {
+
+#footer {
+  background: #d3d3d3;
+  padding-block: 2em;
+}
+
+.hero-section .hero-content {
+  width: auto;
+  max-width: 700px;
+}
+.hero-section .hero-content a {
+  color: #fff;
+  font-size: 1.2rem;
+}
+.hero-section .hero-content a span {
+  font-size: 0.8rem;
+}
+
+#past {
+  padding-block: 4em;
+  color: #272a31;
+}
+#past h2 {
+  font-weight: 900;
+}
+#past .past-imgs-container {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 1.5em;
+}
+#past .past-imgs-container strong {
+  font-size: 2.5rem;
+}
+#past .past-imgs-container .past-conf-1 {
+  padding: 150px 100px;
+  background-color: rgba(255, 140, 0, 0.5);
+  background-image: url("../assets/about/people.jpg");
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+  background-size: cover;
+}
+#past .past-imgs-container .past-conf-2 {
+  padding: 150px 100px;
+  background-color: rgba(255, 140, 0, 0.5);
+  background-image: url("../assets/about/group-people.jpg");
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center;
+}
+
+#logo-section {
+  padding-block: 4em;
+  color: #272a31;
+}
+#logo-section h2 {
+  font-weight: 900;
+}
+
+.separator {
   border: 2px solid #ff8c00;
   width: 50px;
   margin-left: auto;
   margin-right: auto;
 }
 
-#footer {
-  background: #d3d3d3;
-  padding-block: 2em;
+.separator-grey {
+  margin-block: 0.5em;
+  border: 2px solid #272a31;
+  width: 50px;
+  margin-left: 0;
+  margin-right: auto;
 }
 
 /*# sourceMappingURL=main.css.map */

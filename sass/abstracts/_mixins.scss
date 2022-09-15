@@ -22,6 +22,7 @@
 
 @mixin sub-heading {
   @include gradient-heading;
+
   font-size: 1.5rem;
   font-weight: 900;
 }
@@ -41,7 +42,9 @@
 @mixin card-small($color-or-none, $txt-clr) {
   .cards {
     margin-bottom: 2em;
+
     --bs-gutter-x: 0;
+
     .card {
       background: $color-or-none;
       border: none;
@@ -56,6 +59,7 @@
 
         i {
           @include gradient-heading;
+
           font-size: 3rem;
         }
 
@@ -86,6 +90,7 @@
 
         i {
           @include gradient-heading;
+
           font-size: 3rem;
         }
 
@@ -119,6 +124,7 @@
 
         i {
           @include gradient-heading;
+
           font-size: 3rem;
         }
 
@@ -139,6 +145,7 @@
   .btn {
     background: $primary;
     border: none;
+    border: 2px solid $primary;
     border-radius: 0;
     padding-block: 1em;
     font-weight: 900;
