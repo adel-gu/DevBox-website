@@ -1,0 +1,15 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+#partners {
+  color: rgba($color: $secondary, $alpha: 0.5);
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding-block: 1.5em;
+
+  h2 {
+    color: $secondary;
+  }
+
+  @include seperator(auto, auto, $primary);
+}

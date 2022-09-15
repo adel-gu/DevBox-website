@@ -1,0 +1,27 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+#program {
+  @include overlay('../assets/program/halftone_background_12.jpg', $dark);
+  padding-block: 4em;
+
+  h2 {
+    @include sub-heading;
+  }
+
+  @include seperator(auto, auto, $primary);
+  @include button-primary;
+  @include card-small(rgba($color: $dark, $alpha: 0.3), $white);
+}
+
+@media screen and (min-width: 490px) {
+  #program {
+    @include card-medium;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #program {
+    @include card-larg(5);
+  }
+}

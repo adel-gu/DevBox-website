@@ -5,11 +5,7 @@
   color: $white;
 
   .container-fluid {
-    background-color: rgba($color: #000, $alpha: 0.5);
-    background-image: url(../assets/hero/hero2.jpg);
-    background-blend-mode: overlay;
-    background-repeat: no-repeat;
-    background-size: cover;
+    @include overlay('../assets/hero/hero2.jpg', #000);
     padding-block: 6em;
   }
 

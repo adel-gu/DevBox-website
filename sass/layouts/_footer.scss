@@ -1,0 +1,7 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+#footer {
+  background: $secondary;
+  padding-block: 2em;
+}
