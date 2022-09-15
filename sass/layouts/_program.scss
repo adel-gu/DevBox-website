@@ -8,8 +8,6 @@
   h2 {
     @include sub-heading;
   }
-
-  @include seperator(auto, auto, $primary);
   @include button-primary;
   @include card-small(rgba($color: $dark, $alpha: 0.3), $white);
 }

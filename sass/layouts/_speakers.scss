@@ -20,7 +20,6 @@
     color: $primary;
   }
 
-  @include seperator(auto, auto, $primary);
   @include card-small(none, $dark);
 
   .cards {
@@ -52,12 +51,6 @@
         strong {
           font-style: italic;
           color: $primary;
-        }
-
-        @include seperator(0, auto, $dark);
-
-        .separator-gray {
-          margin-block: 0.8em;
         }
       }
     }
