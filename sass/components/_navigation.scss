@@ -2,7 +2,6 @@
 
 .nav {
   position: absolute;
-  z-index: 2;
 
   .navbar-nav {
     background-color: $white;
@@ -12,6 +11,7 @@
     left: 0;
     width: 100%;
     height: 100%;
+    z-index: 2;
 
     .nav-link {
       color: $dark;
@@ -30,8 +30,13 @@
     border: 2px solid $primary;
   }
 
-  .navbar-toggler-icon {
-    background-image: url(../assets/navbar/menu.svg);
+  .navbar-toggler {
+    position: relative;
+    z-index: 200;
+
+    .navbar-toggler-icon {
+      background-image: url(../assets/navbar/menu.svg);
+    }
   }
 }
 
@@ -56,8 +61,10 @@
       }
     }
 
-    .navbar-toggler-icon {
-      background-image: url(../assets/navbar/menu-gray.svg);
+    .navbar-toggler {
+      .navbar-toggler-icon {
+        background-image: url(../assets/navbar/menu-gray.svg);
+      }
     }
   }
 }
