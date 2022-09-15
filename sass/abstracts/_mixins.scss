@@ -1,0 +1,148 @@
+@use './variables' as *;
+
+@mixin gradient-heading {
+  background-image: linear-gradient(
+    160deg,
+    rgba(236, 82, 66, 1) 0%,
+    rgba(249, 181, 32, 1) 100%
+  );
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+@mixin overlay($path, $colo) {
+  background-color: rgba($color: $colo, $alpha: 0.5);
+  background-image: url($path);
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+  background-size: cover;
+}
+
+@mixin sub-heading {
+  @include gradient-heading;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+@mixin sub-heading-dark {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+@mixin seperator($margin-left, $margin-right, $color) {
+  .separator {
+    border: 2px solid $color;
+    width: 50px;
+    margin-left: $margin-left;
+    margin-right: $margin-right;
+  }
+}
+
+@mixin card-small($color-or-none, $txt-clr) {
+  .cards {
+    margin-bottom: 2em;
+    --bs-gutter-x: 0;
+    .card {
+      background: $color-or-none;
+      border: none;
+      border-radius: 0;
+      margin-bottom: 1em;
+      padding: 1em;
+
+      .card-head {
+        align-items: center;
+        padding-inline: 1em;
+        flex-direction: column;
+
+        i {
+          @include gradient-heading;
+          font-size: 3rem;
+        }
+
+        h3 {
+          @include sub-heading;
+        }
+      }
+
+      .card-body {
+        color: $txt-clr;
+        padding: 0;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@mixin card-medium {
+  .cards {
+    .card {
+      flex-direction: row;
+
+      .card-head {
+        align-items: center;
+        padding-inline: 1em;
+        flex-direction: row;
+        gap: 1em;
+
+        i {
+          @include gradient-heading;
+          font-size: 3rem;
+        }
+
+        h3 {
+          @include sub-heading;
+        }
+      }
+
+      > .card-body {
+        padding: 0;
+        text-align: start;
+      }
+    }
+  }
+}
+
+@mixin card-larg($repeat) {
+  .cards {
+    display: grid;
+    grid-template-columns: repeat($repeat, 1fr);
+    column-gap: 5px;
+
+    .card {
+      flex-direction: column;
+
+      .card-head {
+        align-items: center;
+        padding-inline: 1em;
+        flex-direction: column;
+        gap: 1em;
+
+        i {
+          @include gradient-heading;
+          font-size: 3rem;
+        }
+
+        h3 {
+          @include sub-heading;
+        }
+      }
+
+      .card-body {
+        padding: 0;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@mixin button-primary {
+  .btn {
+    background: $primary;
+    border: none;
+    border-radius: 0;
+    padding-block: 1em;
+    font-weight: 900;
+  }
+}
