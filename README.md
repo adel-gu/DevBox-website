@@ -6,10 +6,12 @@
 
 ## Preview
 > Desktop Version
-![DevBox](assets\preview\desktop.GIF)
+![desktop](https://user-images.githubusercontent.com/68030297/190686358-5f61dd90-e1d2-4548-8c10-976474e92849.gif)
+
 
 > Mobile Version
-![DevBox](assets\preview\mobile.GIF)
+![mobile](https://user-images.githubusercontent.com/68030297/190686370-4b693911-022a-4049-a212-14402ef80eb8.gif)
+
 
 The Website is for a Software Engineering Agency Under the Name of DevBox, one of many main activities of this Agency is hosting Global Events where a lot of passionate and creative people could meet and share opinions about tech Topics, The coming Global summit DevBox is hosting on 21/10/2022.
  
@@ -24,10 +26,6 @@ The Website is for a Software Engineering Agency Under the Name of DevBox, one o
 ## Live Demo (if available)
 
 [Live Demo Link](https://livedemo.com)
-
-## Project Description over a Loom Video
-
-[Loom video link](https://loomvideo.com);
 
 ## Getting Started
 
