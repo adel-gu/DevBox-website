@@ -6,10 +6,12 @@
 
 ## Preview
 > Desktop Version
+
 ![desktop](https://user-images.githubusercontent.com/68030297/190686358-5f61dd90-e1d2-4548-8c10-976474e92849.gif)
 
 
 > Mobile Version
+
 ![mobile](https://user-images.githubusercontent.com/68030297/190686370-4b693911-022a-4049-a212-14402ef80eb8.gif)
 
 
