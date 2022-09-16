@@ -1,10 +1,13 @@
 // Colors
-$orange: #ff8c00;
+$red: #ec5242;
 $black: #272a31;
 $gray: #d3d3d3;
 $white: #fff;
 
-$primary: $orange;
+$primary: rgba(
+  $color: $red,
+  $alpha: 0.95,
+);
 $secondary: $gray;
 $dark: $black;
 

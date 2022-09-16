@@ -7,6 +7,7 @@
 
   img {
     width: 100px;
+    height: 100px;
   }
 
   h2 {
@@ -19,10 +20,10 @@
     color: $primary;
   }
 
-  @include card-small(none, $dark);
-
   .cards {
-    .card {
+    @include card-small(none, $dark);
+
+    li.card {
       padding: 0;
       flex-direction: row;
       align-items: start;
@@ -61,25 +62,21 @@
 
 @media screen and (min-width: 768px) {
   #speakers {
-    @include card-larg(2);
-
     .cards {
+      @include card-larg(2, start);
+
       gap: 3em;
 
       .card-head {
         padding: 0 !important;
       }
 
-      .card {
+      li.card {
         padding: 0;
         flex-direction: row;
         align-items: start;
         margin-bottom: 0;
         gap: 1.5em;
-
-        .card-body {
-          text-align: start;
-        }
       }
     }
   }

@@ -1,15 +1,7 @@
 @use './variables' as *;
 
 @mixin gradient-heading {
-  background-image: linear-gradient(
-    160deg,
-    rgba(236, 82, 66, 1) 0%,
-    rgba(249, 181, 32, 1) 100%
-  );
-  background-size: cover;
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
+  color: $primary;
 }
 
 @mixin overlay($path, $colo) {
@@ -40,103 +32,84 @@
 }
 
 @mixin card-small($color-or-none, $txt-clr) {
-  .cards {
-    margin-bottom: 2em;
+  margin-bottom: 2em;
 
-    --bs-gutter-x: 0;
+  --bs-gutter-x: 0;
 
-    .card {
-      background: $color-or-none;
-      border: none;
-      border-radius: 0;
-      margin-bottom: 1em;
-      padding: 1em;
+  .card {
+    background: $color-or-none;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 1em;
+    padding: 1em;
 
-      .card-head {
-        align-items: center;
-        padding-inline: 1em;
-        flex-direction: column;
+    .card-head {
+      align-items: center;
+      padding-inline: 1em;
+      flex-direction: column;
 
-        i {
-          @include gradient-heading;
-
-          font-size: 3rem;
-        }
-
-        h3 {
-          @include sub-heading;
-        }
+      i {
+        color: $white;
+        font-size: 3rem;
       }
 
-      .card-body {
-        color: $txt-clr;
-        padding: 0;
-        text-align: center;
+      h3 {
+        @include sub-heading;
       }
+    }
+
+    .card-body {
+      color: $txt-clr;
+      padding: 0;
+      text-align: center;
     }
   }
 }
 
 @mixin card-medium {
-  .cards {
-    .card {
+  .card {
+    flex-direction: row;
+
+    .card-head {
+      align-items: center;
+      padding-inline: 1em;
       flex-direction: row;
+      gap: 1em;
 
-      .card-head {
-        align-items: center;
-        padding-inline: 1em;
-        flex-direction: row;
-        gap: 1em;
-
-        i {
-          @include gradient-heading;
-
-          font-size: 3rem;
-        }
-
-        h3 {
-          @include sub-heading;
-        }
+      h3 {
+        @include sub-heading;
       }
+    }
 
-      > .card-body {
-        padding: 0;
-        text-align: start;
-      }
+    > .card-body {
+      padding: 0;
+      text-align: start;
     }
   }
 }
 
-@mixin card-larg($repeat) {
-  .cards {
-    display: grid;
-    grid-template-columns: repeat($repeat, 1fr);
-    column-gap: 5px;
+@mixin card-larg($repeat, $text-align) {
+  display: grid;
+  grid-template-columns: repeat($repeat, 1fr);
+  column-gap: 5px;
 
-    .card {
+  .card {
+    flex-direction: column;
+
+    .card-head {
+      align-items: center;
+      padding-inline: 1em;
       flex-direction: column;
+      gap: 1em;
 
-      .card-head {
-        align-items: center;
-        padding-inline: 1em;
-        flex-direction: column;
-        gap: 1em;
-
-        i {
-          @include gradient-heading;
-
-          font-size: 3rem;
-        }
-
-        h3 {
-          @include sub-heading;
-        }
+      h3 {
+        @include sub-heading;
       }
+    }
 
-      .card-body {
-        padding: 0;
-        text-align: center;
-      }
+    .card-body {
+      padding: 0;
+      text-align: $text-align;
     }
   }
 }
