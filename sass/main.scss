@@ -1,6 +1,5 @@
 @use './base/reset';
 @use './base/typography';
-@use './base/animation';
 @use './components/toolbar';
 @use './components/navigation';
 @use './layouts/hero';
@@ -10,3 +9,4 @@
 @use './layouts/footer';
 @use './pages/about';
 @use './abstracts/utilities';
+@use './base/animation';
