@@ -16,6 +16,11 @@
     .nav-link {
       color: $dark;
       margin-bottom: 2em;
+      position: relative;
+    }
+
+    .current {
+      color: $primary;
     }
 
     .campaing {
