@@ -427,7 +427,7 @@ p {
 }
 
 #past .past-imgs-container .past-conf-1 {
-  padding: 150px 100px;
+  height: 12em;
   background-color: rgba(236, 82, 66, 0.5);
   background-image: url("../assets/about/people.jpg");
   background-repeat: no-repeat;
@@ -436,7 +436,7 @@ p {
 }
 
 #past .past-imgs-container .past-conf-2 {
-  padding: 150px 100px;
+  height: 12em;
   background-color: rgba(236, 82, 66, 0.5);
   background-image: url("../assets/about/group-people.jpg");
   background-repeat: no-repeat;
