@@ -10,44 +10,46 @@ menu.addEventListener('click', () => {
 const speakers = [
   {
     name: 'Christian Buehner',
-    position: `Entrepreneur; co-founded Open Text Corporation, Textuality and Antarctica Systems`,
-    degree: `Bachelor of Science degrees in math and computer science`,
+    position:
+      'Entrepreneur; co-founded Open Text Corporation, Textuality and Antarctica Systems',
+    degree: 'Bachelor of Science degrees in math and computer science',
     picture: './assets/team/christian-buehner-DItYlc26zVI-unsplash.jpg',
     alt: 'Christian Buehner Picture',
   },
   {
     name: 'Christina Wocintechchat',
-    position: `Entrepreneur; worked for Intel and Google`,
-    degree: `Bachelor's degree in computer science`,
+    position: 'Entrepreneur; worked for Intel and Google',
+    degree: "Bachelor's degree in computer science",
     picture:
       './assets/team/christina-wocintechchat-com-0Zx1bDv5BNY-unsplash.jpg',
     alt: 'Christian Buehner Picture',
   },
   {
     name: 'Jonas Kakaroto',
-    position: `DEC, Microsoft; co-founded Agrippa-Ord`,
-    degree: `Bachelor's degree`,
+    position: 'DEC, Microsoft; co-founded Agrippa-Ord',
+    degree: "Bachelor's degree",
     picture: './assets/team/jonas-kakaroto-KIPqvvTOC1s-unsplash.jpg',
     alt: 'Jonas Kakaroto Picture',
   },
   {
     name: 'Julian Wan',
-    position: `Microsoft; as an entrepreneur, co-founded The Tetris Company`,
-    degree: `Degree in computer software engineering`,
+    position: 'Microsoft; as an entrepreneur, co-founded The Tetris Company',
+    degree: 'Degree in computer software engineering',
     picture: './assets/team/julian-wan-WNoLnJo7tS8-unsplash.jpg',
     alt: 'Julian Wan Picture',
   },
   {
     name: 'Ludovic Migneault',
-    position: `Teacher and Internet entrepreneur; co-founded Wikipedia`,
-    degree: `Bachelor's and master's degrees in finance`,
+    position: 'Teacher and Internet entrepreneur; co-founded Wikipedia',
+    degree: "Bachelor's and master's degrees in finance",
     picture: './assets/team/ludovic-migneault-EZ4TYgXPNWk-unsplash.jpg',
     alt: 'Ludovic Migneault Picture',
   },
   {
     name: 'Stephanie Liverani',
-    position: `Entrepreneur; co-founded NetMeridian Software, SponsorNet New Media and Confinity`,
-    degree: `Bachelor's degree in computer science`,
+    position:
+      'Entrepreneur; co-founded NetMeridian Software, SponsorNet New Media and Confinity',
+    degree: "Bachelor's degree in computer science",
     picture: './assets/team/stephanie-liverani-Zz5LQe-VSMY-unsplash.jpg',
     alt: 'Stephanie Liverani Picture',
   },
@@ -64,22 +66,25 @@ const programs = [
   {
     icon: 'fa-solid fa-display',
     title: 'Exhibition',
-    description: `Appreciate various App development approaches and ideas for creative people.`,
+    description:
+      'Appreciate various App development approaches and ideas for creative people.',
   },
   {
     icon: 'fa-solid fa-comments',
     title: 'Forum',
-    description: `Have the opportunity to share your thoughts With the experts in each field.`,
+    description:
+      'Have the opportunity to share your thoughts With the experts in each field.',
   },
   {
     icon: 'fa-solid fa-gem',
     title: 'Workshop',
-    description: `Try to build your own project using open source license.`,
+    description: 'Try to build your own project using open source license.',
   },
   {
     icon: 'fa-brands fa-connectdevelop',
     title: 'Connect',
-    description: `Get the opportunities to build and solidify your network with amazing experts`,
+    description:
+      'Get the opportunities to build and solidify your network with amazing experts',
   },
 ];
 
@@ -87,7 +92,7 @@ const pCards = document.querySelector('#program .cards');
 const sCards = document.querySelector('#speakers .cards');
 
 function appendCard() {
-  for (let i = 0; i < speakers.length; i++) {
+  for (let i = 0; i < speakers.length; i += 1) {
     const cardTemplate = `<li class="card text-start">
     <div class="card-head d-flex">
       <div class="img-container">
@@ -114,7 +119,7 @@ function appendCard() {
     sCards.innerHTML += cardTemplate;
   }
 
-  for (let i = 0; i < programs.length; i++) {
+  for (let i = 0; i < programs.length; i += 1) {
     const cardTemplate = `
     <li class="card text-start">
       <div class="card-head d-flex">
