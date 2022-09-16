@@ -1,4 +1,5 @@
-@import '../abstracts/variables';
+/* stylelint-disable */
+@use '../abstracts/variables' as *;
 
 .nav-item {
   .nav-link:hover {

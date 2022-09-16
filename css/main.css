@@ -12,8 +12,9 @@ p {
   margin: 0;
 }
 
+/* stylelint-disable */
 .red-text {
-  color: #ff8c00;
+  color: rgba(236, 82, 66, 0.95);
   font-size: 1.5rem;
 }
 
@@ -26,6 +27,7 @@ p {
   font-weight: 900;
 }
 
+/* stylelint-disable */
 .toolbar {
   padding-block: 0.5em;
 }
@@ -35,6 +37,7 @@ p {
   text-decoration: none;
 }
 
+/* stylelint-disable */
 .nav {
   position: absolute;
 }
@@ -54,16 +57,16 @@ p {
   position: relative;
 }
 .nav .navbar-nav .current {
-  color: #ff8c00;
+  color: rgba(236, 82, 66, 0.95);
 }
 .nav .navbar-nav .campaing {
-  color: #ff8c00;
+  color: rgba(236, 82, 66, 0.95);
   font-weight: 900;
   text-align: center;
   width: 50%;
 }
 .nav .primary-border {
-  border: 2px solid #ff8c00;
+  border: 2px solid rgba(236, 82, 66, 0.95);
 }
 .nav .navbar-toggler {
   position: relative;
@@ -95,6 +98,7 @@ p {
     background-image: url(../assets/navbar/menu-gray.svg);
   }
 }
+/* stylelint-disable */ /* stylelint-disable */
 .hero-section {
   color: #fff;
 }
@@ -113,11 +117,7 @@ p {
 .hero-section .hero-content h1 {
   font-weight: 900;
   font-size: 3rem;
-  background-image: linear-gradient(160deg, rgb(236, 82, 66) 0%, rgb(249, 181, 32) 100%);
-  background-size: cover;
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
+  color: rgba(236, 82, 66, 0.95);
 }
 .hero-section .hero-content .attention {
   font-weight: 500;
@@ -127,23 +127,20 @@ p {
   background: #272a31;
 }
 
+/* stylelint-disable */
 #program {
   background: #272a31;
   padding-block: 4em;
 }
 #program h2 {
-  background-image: linear-gradient(160deg, rgb(236, 82, 66) 0%, rgb(249, 181, 32) 100%);
-  background-size: cover;
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
+  color: rgba(236, 82, 66, 0.95);
   font-size: 1.5rem;
   font-weight: 900;
 }
 #program .btn {
-  background: #ff8c00;
+  background: rgba(236, 82, 66, 0.95);
   border: none;
-  border: 2px solid #ff8c00;
+  border: 2px solid rgba(236, 82, 66, 0.95);
   border-radius: 0;
   padding-block: 1em;
   font-weight: 900;
@@ -165,19 +162,11 @@ p {
   flex-direction: column;
 }
 #program .cards .card .card-head i {
-  background-image: linear-gradient(160deg, rgb(236, 82, 66) 0%, rgb(249, 181, 32) 100%);
-  background-size: cover;
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
+  color: #fff;
   font-size: 3rem;
 }
 #program .cards .card .card-head h3 {
-  background-image: linear-gradient(160deg, rgb(236, 82, 66) 0%, rgb(249, 181, 32) 100%);
-  background-size: cover;
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
+  color: rgba(236, 82, 66, 0.95);
   font-size: 1.5rem;
   font-weight: 900;
 }
@@ -197,20 +186,8 @@ p {
     flex-direction: row;
     gap: 1em;
   }
-  #program .cards .card .card-head i {
-    background-image: linear-gradient(160deg, rgb(236, 82, 66) 0%, rgb(249, 181, 32) 100%);
-    background-size: cover;
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    font-size: 3rem;
-  }
   #program .cards .card .card-head h3 {
-    background-image: linear-gradient(160deg, rgb(236, 82, 66) 0%, rgb(249, 181, 32) 100%);
-    background-size: cover;
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
+    color: rgba(236, 82, 66, 0.95);
     font-size: 1.5rem;
     font-weight: 900;
   }
@@ -234,20 +211,8 @@ p {
     flex-direction: column;
     gap: 1em;
   }
-  #program .cards .card .card-head i {
-    background-image: linear-gradient(160deg, rgb(236, 82, 66) 0%, rgb(249, 181, 32) 100%);
-    background-size: cover;
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    font-size: 3rem;
-  }
   #program .cards .card .card-head h3 {
-    background-image: linear-gradient(160deg, rgb(236, 82, 66) 0%, rgb(249, 181, 32) 100%);
-    background-size: cover;
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
+    color: rgba(236, 82, 66, 0.95);
     font-size: 1.5rem;
     font-weight: 900;
   }
@@ -256,27 +221,24 @@ p {
     text-align: center;
   }
 }
+/* stylelint-disable */
 #speakers {
   padding-block: 4em;
   font-size: 12px;
 }
 #speakers img {
   width: 100px;
-  aspect-ratio: 1;
+  height: 100px;
 }
 #speakers h2 {
-  background-image: linear-gradient(160deg, rgb(236, 82, 66) 0%, rgb(249, 181, 32) 100%);
-  background-size: cover;
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
+  color: rgba(236, 82, 66, 0.95);
   font-size: 1.5rem;
   font-weight: 900;
 }
 #speakers button {
   border-radius: 0;
-  border: 2px solid #ff8c00;
-  color: #ff8c00;
+  border: 2px solid rgba(236, 82, 66, 0.95);
+  color: rgba(236, 82, 66, 0.95);
 }
 #speakers .cards {
   margin-bottom: 2em;
@@ -295,19 +257,11 @@ p {
   flex-direction: column;
 }
 #speakers .cards .card .card-head i {
-  background-image: linear-gradient(160deg, rgb(236, 82, 66) 0%, rgb(249, 181, 32) 100%);
-  background-size: cover;
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
+  color: #fff;
   font-size: 3rem;
 }
 #speakers .cards .card .card-head h3 {
-  background-image: linear-gradient(160deg, rgb(236, 82, 66) 0%, rgb(249, 181, 32) 100%);
-  background-size: cover;
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
+  color: rgba(236, 82, 66, 0.95);
   font-size: 1.5rem;
   font-weight: 900;
 }
@@ -316,34 +270,34 @@ p {
   padding: 0;
   text-align: center;
 }
-#speakers .cards .card {
+#speakers .cards li.card {
   padding: 0;
   flex-direction: row;
   align-items: start;
   gap: 1.5em;
   margin-bottom: 3em;
 }
-#speakers .cards .card .card-head {
+#speakers .cards li.card .card-head {
   padding: 0;
 }
-#speakers .cards .card .card-head .img-container {
+#speakers .cards li.card .card-head .img-container {
   background-image: url("../assets/team/chess.png");
   background-repeat: no-repeat;
   background-position: left top;
   padding-top: 1em;
   padding-left: 1em;
 }
-#speakers .cards .card .card-body {
+#speakers .cards li.card .card-body {
   text-align: start;
 }
-#speakers .cards .card .card-body h3 {
+#speakers .cards li.card .card-body h3 {
   font-size: 1.5rem;
   font-weight: 900;
   font-size: 1.5em;
 }
-#speakers .cards .card .card-body strong {
+#speakers .cards li.card .card-body strong {
   font-style: italic;
-  color: #ff8c00;
+  color: rgba(236, 82, 66, 0.95);
 }
 
 @media screen and (min-width: 768px) {
@@ -351,6 +305,7 @@ p {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 5px;
+    gap: 3em;
   }
   #speakers .cards .card {
     flex-direction: column;
@@ -361,44 +316,27 @@ p {
     flex-direction: column;
     gap: 1em;
   }
-  #speakers .cards .card .card-head i {
-    background-image: linear-gradient(160deg, rgb(236, 82, 66) 0%, rgb(249, 181, 32) 100%);
-    background-size: cover;
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    font-size: 3rem;
-  }
   #speakers .cards .card .card-head h3 {
-    background-image: linear-gradient(160deg, rgb(236, 82, 66) 0%, rgb(249, 181, 32) 100%);
-    background-size: cover;
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
+    color: rgba(236, 82, 66, 0.95);
     font-size: 1.5rem;
     font-weight: 900;
   }
   #speakers .cards .card .card-body {
     padding: 0;
-    text-align: center;
-  }
-  #speakers .cards {
-    gap: 3em;
+    text-align: start;
   }
   #speakers .cards .card-head {
     padding: 0 !important;
   }
-  #speakers .cards .card {
+  #speakers .cards li.card {
     padding: 0;
     flex-direction: row;
     align-items: start;
     margin-bottom: 0;
     gap: 1.5em;
   }
-  #speakers .cards .card .card-body {
-    text-align: start;
-  }
 }
+/* stylelint-disable */
 #partners {
   color: rgba(211, 211, 211, 0.5);
   font-size: 1.8rem;
@@ -409,11 +347,13 @@ p {
   color: #d3d3d3;
 }
 
+/* stylelint-disable */
 #footer {
   background: #d3d3d3;
   padding-block: 2em;
 }
 
+/* stylelint-disable */
 .hero-section .hero-content {
   width: auto;
   max-width: 700px;
@@ -443,7 +383,7 @@ p {
 }
 #past .past-imgs-container .past-conf-1 {
   padding: 150px 100px;
-  background-color: rgba(255, 140, 0, 0.5);
+  background-color: rgba(236, 82, 66, 0.5);
   background-image: url("../assets/about/people.jpg");
   background-repeat: no-repeat;
   background-blend-mode: overlay;
@@ -451,7 +391,7 @@ p {
 }
 #past .past-imgs-container .past-conf-2 {
   padding: 150px 100px;
-  background-color: rgba(255, 140, 0, 0.5);
+  background-color: rgba(236, 82, 66, 0.5);
   background-image: url("../assets/about/group-people.jpg");
   background-repeat: no-repeat;
   background-blend-mode: overlay;
@@ -467,8 +407,9 @@ p {
   font-weight: 900;
 }
 
+/* stylelint-disable */
 .separator {
-  border: 2px solid #ff8c00;
+  border: 2px solid rgba(236, 82, 66, 0.95);
   width: 50px;
   margin-left: auto;
   margin-right: auto;
@@ -482,11 +423,12 @@ p {
   margin-right: auto;
 }
 
+/* stylelint-disable */
 .nav-item .nav-link:hover {
-  color: #ff8c00;
+  color: rgba(236, 82, 66, 0.95);
 }
 .nav-item:last-child .nav-link:hover {
-  background: #ff8c00;
+  background: rgba(236, 82, 66, 0.95);
   color: #fff;
 }
 
@@ -495,13 +437,15 @@ p {
 }
 
 #program .btn:hover {
-  color: #ff8c00 !important;
+  color: rgba(236, 82, 66, 0.95) !important;
   background: none;
 }
 
 #speakers button:hover {
-  background: #ff8c00;
+  background: rgba(236, 82, 66, 0.95);
   color: #fff;
 }
+
+/* stylelint-disable */
 
 /*# sourceMappingURL=main.css.map */
