@@ -131,5 +131,4 @@ function appendCard() {
     pCards.innerHTML += cardTemplate;
   }
 }
-
 window.addEventListener('load', appendCard);
