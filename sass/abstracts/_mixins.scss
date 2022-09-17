@@ -1,0 +1,127 @@
+/* stylelint-disable */
+@use './variables' as *;
+
+@mixin gradient-heading {
+  color: $primary;
+}
+
+@mixin overlay($path, $colo) {
+  background-color: rgba($color: $colo, $alpha: 0.5);
+  background-image: url($path);
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+  background-size: cover;
+}
+
+@mixin sub-heading {
+  @include gradient-heading;
+
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+@mixin sub-heading-dark {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+@mixin seperator($margin-left, $margin-right, $color) {
+  border: 2px solid $color;
+  width: 50px;
+  margin-left: $margin-left;
+  margin-right: $margin-right;
+}
+
+@mixin card-small($color-or-none, $txt-clr) {
+  margin-bottom: 2em;
+
+  --bs-gutter-x: 0;
+
+  .card {
+    background: $color-or-none;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 1em;
+    padding: 1em;
+
+    .card-head {
+      align-items: center;
+      padding-inline: 1em;
+      flex-direction: column;
+
+      i {
+        color: $white;
+        font-size: 3rem;
+      }
+
+      h3 {
+        @include sub-heading;
+      }
+    }
+
+    .card-body {
+      color: $txt-clr;
+      padding: 0;
+      text-align: center;
+    }
+  }
+}
+
+@mixin card-medium {
+  .card {
+    flex-direction: row;
+
+    .card-head {
+      align-items: center;
+      padding-inline: 1em;
+      flex-direction: row;
+      gap: 1em;
+
+      h3 {
+        @include sub-heading;
+      }
+    }
+
+    > .card-body {
+      padding: 0;
+      text-align: start;
+    }
+  }
+}
+
+@mixin card-larg($repeat, $text-align) {
+  display: grid;
+  grid-template-columns: repeat($repeat, 1fr);
+  column-gap: 5px;
+
+  .card {
+    flex-direction: column;
+
+    .card-head {
+      align-items: center;
+      padding-inline: 1em;
+      flex-direction: column;
+      gap: 1em;
+
+      h3 {
+        @include sub-heading;
+      }
+    }
+
+    .card-body {
+      padding: 0;
+      text-align: $text-align;
+    }
+  }
+}
+
+@mixin button-primary {
+  .btn {
+    background: $primary;
+    border: none;
+    border: 2px solid $primary;
+    border-radius: 0;
+    padding-block: 1em;
+    font-weight: 900;
+  }
+}

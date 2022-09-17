@@ -1,0 +1,33 @@
+/* stylelint-disable */
+@use '../abstracts/variables' as *;
+
+.nav-item {
+  .nav-link:hover {
+    color: $primary;
+  }
+
+  &:last-child .nav-link:hover {
+    background: $primary;
+    color: $white;
+  }
+}
+
+.toolbar {
+  a:hover {
+    color: $secondary !important;
+  }
+}
+
+#program {
+  .btn:hover {
+    color: $primary !important;
+    background: none;
+  }
+}
+
+#speakers {
+  button:hover {
+    background: $primary;
+    color: $white;
+  }
+}

@@ -1,0 +1,16 @@
+/* stylelint-disable */
+@use '../abstracts/variables' as *;
+
+.red-text {
+  color: $primary;
+  font-size: 1.5rem;
+}
+
+.red-heading {
+  font-size: $medium;
+  font-weight: $extra-bold;
+}
+
+.attention {
+  font-weight: $extra-bold;
+}

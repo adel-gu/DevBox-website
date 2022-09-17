@@ -1,0 +1,13 @@
+/* stylelint-disable */
+@use './variables' as *;
+@use './mixins' as *;
+
+.separator {
+  @include seperator(auto, auto, $primary);
+}
+
+.separator-grey {
+  margin-block: 0.5em;
+
+  @include seperator(0, auto, $dark);
+}

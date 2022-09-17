@@ -1,0 +1,34 @@
+/* stylelint-disable */
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.hero-section {
+  color: $white;
+
+  .container-fluid {
+    @include overlay('../assets/hero/hero2.jpg', #000);
+
+    padding-block: 6em;
+  }
+
+  .hero-content {
+    width: auto;
+    max-width: 500px;
+
+    h1 {
+      font-weight: $extra-bold;
+      font-size: $larg;
+
+      @include gradient-heading;
+    }
+
+    .attention {
+      font-weight: $bold;
+      font-size: $medium;
+    }
+
+    .bg-secondry {
+      background: $dark;
+    }
+  }
+}

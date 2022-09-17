@@ -20,7 +20,7 @@
     />
     <!-- /Fonts -->
     <!-- Css -->
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="../css/main.css" />
     <!-- /CSS -->
     <!-- FONT AWSOME -->
     <script
@@ -28,7 +28,7 @@
       crossorigin="anonymous"
     ></script>
     <!-- /FONT AWSOME -->
-    <script src="./main.js" defer></script>
+    <script src="../main.js" defer></script>
     <title>DevBox Conference 2022</title>
   </head>
   <body>
@@ -51,8 +51,8 @@
       </div>
       <nav class="navbar navbar-expand-lg | nav">
         <div class="container-md">
-          <a class="navbar-brand d-none d-md-block" href="./index.html"
-            ><img src="./assets/logo/Logo.svg" alt="DevBox logo"
+          <a class="navbar-brand d-none d-md-block" href="../index.html"
+            ><img src="../assets/logo/Logo.svg" alt="DevBox logo"
           /></a>
           <button
             class="navbar-toggler border-0"
@@ -63,33 +63,25 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="btn navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon btn"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul
-              class="navbar-nav gap-md-5 ms-auto mb-2 mb-lg-0 text-center align-items-center"
-            >
+            <ul class="navbar-nav gap-md-5 ms-auto mb-2 mb-lg-0 text-center">
               <li class="nav-item">
-                <a
-                  class="nav-link current"
-                  aria-current="page"
-                  href="./index.html"
+                <a class="nav-link" aria-current="page" href="../index.html"
                   >Home</a
                 >
               </li>
               <li class="nav-item">
-                <a
-                  class="nav-link"
-                  aria-current="page"
-                  href="./interfaces/about.html"
+                <a class="nav-link current" aria-current="page" href="#"
                   >About</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#program">Program</a>
+                <a class="nav-link" href="../index.html/#program">Program</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#speakers">Speakers</a>
+                <a class="nav-link" href="../index.html/#speakers">Speakers</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#partners">Partners</a>
@@ -109,52 +101,82 @@
     </header>
 
     <!-- THE HERO SECTION -->
-    <section class="hero-section">
+    <section class="hero-section text-center">
       <div class="container-fluid">
         <div class="container-md">
-          <div class="hero-content">
+          <div class="hero-content mx-auto">
             <p class="red-text">"Welcome To DevBox!!"</p>
             <h1 class="red-heading">
               The Global Conference For Software Engineers 2022
             </h1>
             <div class="bg-secondry border border-white p-2 my-4">
               <p>
-                Experience a new type of gathering, where all creative people
-                meet from over 80 countries is taking place in October, in
-                Canada.
+                Global Software Engineering and Technology Conference aims to
+                bring together leading academic scientists, researchers and
+                research scholars to exchange and share their experiences and
+                research results on all aspects of Global Software Engineering
+                and Technology Conference. It also provides a premier
+                interdisciplinary platform for researchers, practitioners, and
+                educators to present and discuss the most recent innovations,
+                trends, and concerns as well as practical challenges encountered
+                and solutions adopted in the fields of Global Software
+                Engineering and Technology Conference
               </p>
             </div>
-            <p class="attention"><strong>2022.10.21(THU) ~ 22(FRI)</strong></p>
-            <p>@ National Museum of Canada, Art Center Nabi and more.</p>
+            <p>Contact us per Email for any further questions</p>
+            <a href="#">devbox@gmail.com <span>&#10148;</span></a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- PROGRAM SECTION -->
-    <section id="program">
+    <section id="logo-section">
       <div class="container-fluid">
         <div class="container-md text-center">
-          <h2>Main Program</h2>
+          <h2>DevBox Software Development Logo</h2>
           <hr class="separator" />
-          <ul class="cards"></ul>
-          <button
-            type="button"
-            class="btn btn-primary text-white d-block mx-auto"
+          <p class="col-lg-6 mx-auto">
+            The Logo of DevBox Software Engineers Conference 2022 was dicided
+            throught the logo compitition from 20 Jun to 7 July.
+          </p>
+          <div
+            class="logo-container col-12 col-md-6 d-flex justify-content-center border p-5 mx-auto mt-4"
           >
-            Join The DB Global Conference 2022
-          </button>
+            <img src="../assets/logo/Logo.svg" alt="Logo" />
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- SPEAKERS SECTION -->
-    <section id="speakers">
+    <hr />
+
+    <section id="past">
       <div class="container-fluid">
         <div class="container-md text-center">
-          <h2>Featured Speakers</h2>
+          <h2>See the past DevBox Global Conferences</h2>
           <hr class="separator" />
-          <ul class="cards"></ul>
+          <p>
+            Take a look at DevBox Global Conferences which took place in England
+            and France
+          </p>
+          <div class="past-imgs-container row">
+            <div class="col-12 col-lg-6">
+              <div
+                class="past-conf-1 mb-3 mb-lg-0 d-flex flex-column justify-content-center"
+              >
+                <strong>2015</strong>
+                <p>DevBox Global 2015 in France</p>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div
+                class="past-conf-2 d-flex flex-column justify-content-center"
+              >
+                <strong>2018</strong>
+                <p>DevBox Global 2018 in England</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -183,8 +205,8 @@
       <div class="container-fluid">
         <div class="container-md d-flex">
           <div class="left col-6">
-            <a href="./index.html"
-              ><img src="./assets/logo/Logo.svg" alt="Logo"
+            <a href="../index.html"
+              ><img src="../assets/logo/Logo.svg" alt="Logo"
             /></a>
           </div>
           <div class="right col-6">

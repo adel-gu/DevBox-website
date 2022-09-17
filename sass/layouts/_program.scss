@@ -1,0 +1,34 @@
+/* stylelint-disable */
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+#program {
+  background: $dark;
+  padding-block: 4em;
+
+  h2 {
+    @include sub-heading;
+  }
+
+  @include button-primary;
+
+  .cards {
+    @include card-small(rgba($color: $secondary, $alpha: 0.3), $white);
+  }
+}
+
+@media screen and (min-width: 490px) {
+  #program {
+    .cards {
+      @include card-medium;
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #program {
+    .cards {
+      @include card-larg(5, center);
+    }
+  }
+}

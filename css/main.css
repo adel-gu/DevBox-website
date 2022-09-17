@@ -1,0 +1,493 @@
+body {
+  color: #272a31 !important;
+  font-family: "Lato", sans-serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.red-text {
+  color: rgba(236, 82, 66, 0.95);
+  font-size: 1.5rem;
+}
+
+.red-heading {
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.attention {
+  font-weight: 900;
+}
+
+.toolbar {
+  padding-block: 0.5em;
+}
+
+.toolbar a {
+  color: #fff;
+  font-size: 0.75rem;
+  text-decoration: none;
+}
+
+.nav {
+  position: absolute;
+}
+
+.nav .navbar-nav {
+  background-color: #fff;
+  padding-top: 4em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.nav .navbar-nav .nav-link {
+  color: #272a31;
+  margin-bottom: 2em;
+  position: relative;
+}
+
+.nav .navbar-nav .current {
+  color: rgba(236, 82, 66, 0.95);
+}
+
+.nav .navbar-nav .campaing {
+  color: rgba(236, 82, 66, 0.95);
+  font-weight: 900;
+  text-align: center;
+  width: 50%;
+}
+
+.nav .primary-border {
+  border: 2px solid rgba(236, 82, 66, 0.95);
+}
+
+.nav .navbar-toggler {
+  position: relative;
+  z-index: 200;
+}
+
+.nav .navbar-toggler .navbar-toggler-icon {
+  background-image: url(../assets/navbar/menu.svg);
+}
+
+@media screen and (min-width: 768px) {
+  .nav {
+    background-color: #fff;
+    position: static;
+  }
+
+  .nav .navbar-nav {
+    background-color: #fff;
+    padding-top: 0;
+    position: static;
+    width: auto;
+    height: auto;
+  }
+
+  .nav .navbar-nav .nav-link {
+    margin-bottom: 0;
+  }
+
+  .nav .navbar-nav .campaing {
+    width: auto;
+  }
+
+  .nav .navbar-toggler .navbar-toggler-icon {
+    background-image: url(../assets/navbar/menu-gray.svg);
+  }
+}
+
+.hero-section {
+  color: #fff;
+}
+
+.hero-section .container-fluid {
+  background-color: rgba(0, 0, 0, 0.5);
+  background-image: url("../assets/hero/hero2.jpg");
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+  background-size: cover;
+  padding-block: 6em;
+}
+
+.hero-section .hero-content {
+  width: auto;
+  max-width: 600px;
+}
+
+.hero-section .hero-content h1 {
+  font-weight: 900;
+  font-size: 3rem;
+  color: rgba(236, 82, 66, 0.95);
+}
+
+.hero-section .hero-content .attention {
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.hero-section .hero-content .bg-secondry {
+  background: #272a31;
+}
+
+#program {
+  background: #272a31;
+  padding-block: 4em;
+}
+
+#program h2 {
+  color: rgba(236, 82, 66, 0.95);
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+#program .btn {
+  background: rgba(236, 82, 66, 0.95);
+  border: none;
+  border: 2px solid rgba(236, 82, 66, 0.95);
+  border-radius: 0;
+  padding-block: 1em;
+  font-weight: 900;
+}
+
+#program .cards {
+  margin-bottom: 2em;
+
+  --bs-gutter-x: 0;
+}
+
+#program .cards .card {
+  background: rgba(211, 211, 211, 0.3);
+  border: none;
+  border-radius: 0;
+  margin-bottom: 1em;
+  padding: 1em;
+}
+
+#program .cards .card .card-head {
+  align-items: center;
+  padding-inline: 1em;
+  flex-direction: column;
+}
+
+#program .cards .card .card-head i {
+  color: #fff;
+  font-size: 3rem;
+}
+
+#program .cards .card .card-head h3 {
+  color: rgba(236, 82, 66, 0.95);
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+#program .cards .card .card-body {
+  color: #fff;
+  padding: 0;
+  text-align: center;
+}
+
+@media screen and (min-width: 490px) {
+  #program .cards .card {
+    flex-direction: row;
+  }
+
+  #program .cards .card .card-head {
+    align-items: center;
+    padding-inline: 1em;
+    flex-direction: row;
+    gap: 1em;
+  }
+
+  #program .cards .card .card-head h3 {
+    color: rgba(236, 82, 66, 0.95);
+    font-size: 1.5rem;
+    font-weight: 900;
+  }
+
+  #program .cards .card > .card-body {
+    padding: 0;
+    text-align: start;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #program .cards {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 5px;
+  }
+
+  #program .cards .card {
+    flex-direction: column;
+  }
+
+  #program .cards .card .card-head {
+    align-items: center;
+    padding-inline: 1em;
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  #program .cards .card .card-head h3 {
+    color: rgba(236, 82, 66, 0.95);
+    font-size: 1.5rem;
+    font-weight: 900;
+  }
+
+  #program .cards .card .card-body {
+    padding: 0;
+    text-align: center;
+  }
+}
+
+#speakers {
+  padding-block: 4em;
+  font-size: 12px;
+}
+
+#speakers img {
+  width: 100px;
+  height: 100px;
+}
+
+#speakers h2 {
+  color: rgba(236, 82, 66, 0.95);
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+#speakers button {
+  border-radius: 0;
+  border: 2px solid rgba(236, 82, 66, 0.95);
+  color: rgba(236, 82, 66, 0.95);
+}
+
+#speakers .cards {
+  margin-bottom: 2em;
+
+  --bs-gutter-x: 0;
+}
+
+#speakers .cards .card {
+  background: none;
+  border: none;
+  border-radius: 0;
+  margin-bottom: 1em;
+  padding: 1em;
+}
+
+#speakers .cards .card .card-head i {
+  color: #fff;
+  font-size: 3rem;
+}
+
+#speakers .cards .card .card-head h3 {
+  color: rgba(236, 82, 66, 0.95);
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+#speakers .cards .card .card-body {
+  color: #272a31;
+  padding: 0;
+  text-align: center;
+}
+
+#speakers .cards li.card {
+  padding: 0;
+  flex-direction: row;
+  align-items: start;
+  gap: 1.5em;
+  margin-bottom: 3em;
+}
+
+#speakers .cards li.card .card-head {
+  padding: 0;
+}
+
+#speakers .cards li.card .card-head .img-container {
+  background-image: url("../assets/team/chess.png");
+  background-repeat: no-repeat;
+  background-position: left top;
+  padding-top: 1em;
+  padding-left: 1em;
+}
+
+#speakers .cards li.card .card-body {
+  text-align: start;
+}
+
+#speakers .cards li.card .card-body h3 {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+#past .past-imgs-container strong {
+  font-size: 2.5rem;
+}
+
+#speakers .cards li.card .card-body strong {
+  font-style: italic;
+  color: rgba(236, 82, 66, 0.95);
+}
+
+@media screen and (min-width: 768px) {
+  #speakers .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5px;
+    gap: 3em;
+  }
+
+  #speakers .cards .card {
+    flex-direction: column;
+  }
+
+  #speakers .cards .card-head {
+    padding: 0 !important;
+  }
+
+  #speakers .cards .card .card-head {
+    align-items: center;
+    padding-inline: 1em;
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  #speakers .cards .card .card-head h3 {
+    color: rgba(236, 82, 66, 0.95);
+    font-size: 1.5rem;
+    font-weight: 900;
+  }
+
+  #speakers .cards .card .card-body {
+    padding: 0;
+    text-align: start;
+  }
+
+  #speakers .cards li.card {
+    padding: 0;
+    flex-direction: row;
+    align-items: start;
+    margin-bottom: 0;
+    gap: 1.5em;
+  }
+}
+
+#partners {
+  color: rgba(211, 211, 211, 0.5);
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding-block: 1.5em;
+}
+
+#partners h2 {
+  color: #d3d3d3;
+}
+
+#footer {
+  background: #d3d3d3;
+  padding-block: 2em;
+}
+
+.hero-section .hero-content a {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.hero-section .hero-content a span {
+  font-size: 0.8rem;
+}
+
+#past {
+  padding-block: 4em;
+  color: #272a31;
+}
+
+#past h2 {
+  font-weight: 900;
+}
+
+#past .past-imgs-container {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 1.5em;
+}
+
+#past .past-imgs-container .past-conf-1 {
+  height: 12em;
+  background-color: rgba(236, 82, 66, 0.5);
+  background-image: url("../assets/about/people.jpg");
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+  background-size: cover;
+}
+
+#past .past-imgs-container .past-conf-2 {
+  height: 12em;
+  background-color: rgba(236, 82, 66, 0.5);
+  background-image: url("../assets/about/group-people.jpg");
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center;
+}
+
+#logo-section {
+  padding-block: 4em;
+  color: #272a31;
+}
+
+#logo-section h2 {
+  font-weight: 900;
+}
+
+.separator {
+  border: 2px solid rgba(236, 82, 66, 0.95);
+  width: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.separator-grey {
+  margin-block: 0.5em;
+  border: 2px solid #272a31;
+  width: 50px;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.nav-item .nav-link:hover {
+  color: rgba(236, 82, 66, 0.95);
+}
+
+.nav-item:last-child .nav-link:hover {
+  background: rgba(236, 82, 66, 0.95);
+  color: #fff;
+}
+
+.toolbar a:hover {
+  color: #d3d3d3 !important;
+}
+
+#program .btn:hover {
+  color: rgba(236, 82, 66, 0.95) !important;
+  background: none;
+}
+
+#speakers button:hover {
+  background: rgba(236, 82, 66, 0.95);
+  color: #fff;
+}

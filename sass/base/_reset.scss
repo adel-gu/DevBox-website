@@ -1,0 +1,16 @@
+/* stylelint-disable */
+@use '../abstracts/variables' as *;
+
+body {
+  color: $dark !important;
+  font-family: $ff-body;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}

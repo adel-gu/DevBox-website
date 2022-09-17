@@ -1,0 +1,12 @@
+/* stylelint-disable */
+@use '../abstracts/variables' as *;
+
+.toolbar {
+  padding-block: 0.5em;
+
+  a {
+    color: $white;
+    font-size: $small;
+    text-decoration: none;
+  }
+}

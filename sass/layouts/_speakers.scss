@@ -1,0 +1,82 @@
+/* stylelint-disable */
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+#speakers {
+  padding-block: 4em;
+  font-size: 12px;
+
+  img {
+    width: 100px;
+    height: 100px;
+  }
+
+  h2 {
+    @include sub-heading;
+  }
+
+  button {
+    border-radius: 0;
+    border: 2px solid $primary;
+    color: $primary;
+  }
+
+  .cards {
+    @include card-small(none, $dark);
+
+    li.card {
+      padding: 0;
+      flex-direction: row;
+      align-items: start;
+      gap: 1.5em;
+      margin-bottom: 3em;
+
+      .card-head {
+        padding: 0;
+
+        .img-container {
+          background-image: url('../assets/team/chess.png');
+          background-repeat: no-repeat;
+          background-position: left top;
+          padding-top: 1em;
+          padding-left: 1em;
+        }
+      }
+
+      .card-body {
+        text-align: start;
+
+        h3 {
+          @include sub-heading-dark;
+        }
+
+        strong {
+          font-style: italic;
+          color: $primary;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #speakers {
+    .cards {
+      @include card-larg(2, start);
+
+      gap: 3em;
+
+      .card-head {
+        padding: 0 !important;
+      }
+
+      li.card {
+        padding: 0;
+        flex-direction: row;
+        align-items: start;
+        margin-bottom: 0;
+        gap: 1.5em;
+      }
+    }
+  }
+}

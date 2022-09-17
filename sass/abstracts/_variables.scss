@@ -1,0 +1,31 @@
+// Colors
+$red: #ec5242;
+$black: #272a31;
+$gray: #d3d3d3;
+$white: #fff;
+
+$primary: rgba(
+  $color: $red,
+  $alpha: 0.95,
+);
+$secondary: $gray;
+$dark: $black;
+
+// Fonts
+$ff: 'Lato', sans-serif;
+$ff-body: $ff;
+
+$light: 300;
+$normal: 400;
+$bold: 500;
+$extra-bold: 900;
+
+$small: 0.75rem;
+$casual: 1rem;
+$medium: 2rem;
+$larg: 3rem;
+
+// $body-bg: $secondary;
+// $body-color: $dark;
+
+// $enable-rounded: false;
