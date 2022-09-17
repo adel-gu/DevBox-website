@@ -25,9 +25,13 @@ The Website is for a Software Engineering Agency Under the Name of DevBox, one o
 - Sass
 - JavaScript
 
-## Live Demo (if available)
+## Live Demo 
 
 [Try this project online 🚀](https://adel-gu.github.io/First-Capstone/)
+
+## Loom video ✨
+
+[Watch a brief description about this project](https://www.loom.com/share/7add075be09944ea903a3a5df3c6f6aa)
 
 ## Getting Started
 
