@@ -27,7 +27,7 @@ The Website is for a Software Engineering Agency Under the Name of DevBox, one o
 
 ## Live Demo 
 
-[Try this project online 🚀](https://adel-gu.github.io/First-Capstone/)
+[Try this project online 🚀](https://adel-gu.github.io/DevBox-website/)
 
 ## Loom video ✨
 
